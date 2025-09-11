@@ -1,0 +1,19 @@
+{
+  "name": "criando-api-com-crud",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --import=tsx --watch src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "name",
+  "devDependencies": {
+    "tsx": "^4.20.5"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0"
+  }
+}
