@@ -2,11 +2,14 @@ require('dotenv').config
 const express = require("express");
 const {default: servidor}=require('./routes/server');
 const {default: routes}=require('./routes/routes');
+
+
 const corpo = express();
 corpo.use(express.json());
-corpo.search(routes);
-append.use(servidor);
+corpo.use(routes);
+corpo.use(servidor);
 
 
-const porta=process.anv.PORTA;
-corpo.listen(porta,()=>console.log(`servidor no end : http://localhost:${porta}`));
+const Rota=process.env.PORTA
+
+corpo.listen(8080,()=>console.log(`servidor no end : http://localhost:${8080}`));
